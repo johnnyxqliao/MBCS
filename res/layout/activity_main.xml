@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.demo.MainActivity" >
+
+    <Button
+        android:id="@+id/btnF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="前进" />
+
+    <Button
+        android:id="@+id/btnL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnF"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/btnF"
+        android:text="左转" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="启动" />
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnB"
+        android:layout_centerHorizontal="true"
+        android:text="停止" />
+
+    <Button
+        android:id="@+id/btnR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnB"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnS"
+        android:text="右转" />
+
+     <ListView
+         android:id="@+id/mListView"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_below="@+id/btnB"
+         android:layout_weight="1.0"
+         android:divider="#ffc6c6c6"
+         android:scrollingCache="false" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/btnB"
+         android:layout_alignBottom="@+id/btnB"
+         android:layout_alignLeft="@+id/mListView"
+         android:text="TextView" />
+
+</RelativeLayout>
